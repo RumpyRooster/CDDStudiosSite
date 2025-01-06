@@ -9,88 +9,113 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #121212;
-            color: #f5f5f5;
+            background-color: #1e1e2f;
+            color: #ffffff;
+            text-align: center;
         }
         header {
-            background-color: #1e1e1e;
             padding: 20px;
-            text-align: center;
+            background-color: #27293d;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2.5rem;
         }
-        nav {
-            margin: 20px 0;
-            text-align: center;
+        section {
+            margin-bottom: 50px;
         }
-        nav a {
-            color: #f5f5f5;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2em;
+        section h2 {
+            margin-bottom: 10px;
         }
-        nav a:hover {
-            text-decoration: underline;
+        section p {
+            margin-top: 30px
+        
         }
-        .content {
+        main {
             padding: 20px;
-            text-align: center;
         }
-        .content h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
+        .cta {
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
         }
-        .content p {
-            font-size: 1.2em;
-            line-height: 1.6;
+        .cta:hover {
+            background-color: #45a049;
         }
         footer {
-            background-color: #1e1e1e;
-            text-align: center;
             padding: 10px;
+            background-color: #27293d;
+            font-size: 0.9rem;
             position: fixed;
-            bottom: 0;
             width: 100%;
+            bottom: 0;
         }
-        footer p {
-            margin: 0;
-            font-size: 0.9em;
+        .social-links {
+            margin-top: 10px;
+        }
+        .social-links a {
+            color: #4caf50;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #45a049;
+        }
+
+        #mission-statement {
+            color: #8c91c2;
+            font-style: italic;
+            margin-top: 1px;
+            margin-bottom: 40px;
+        }
+        #socials-callout {
+            margin-top: 30px;
         }
     </style>
 </head>
+
+
 <body>
     <header>
-        <h1>Welcome to CDD Studios</h1>
-        <nav>
-            <a href="#about">About Us</a>
-            <a href="#projects">Our Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <h1>CockaDoodleDev Studios</h1>
     </header>
 
-    <div class="content">
-        <section id="about">
-            <h2>About CDD Studios</h2>
-            <p>CDD Studios is an independent game development studio dedicated to creating engaging, story-driven games that captivate players across the globe. Our mission is to inspire and entertain through the power of interactive storytelling.</p>
+    <main>
+        <p id="mission-statement">"Games Are Better With Friends" <br><br>-Sun Tzu... Probably"</p>
+
+        <section class="about-us">
+            <h2>About Us</h2>
+            <p>CDD Studios is an indie game development studio focused on crafting unique and immersive experiences. Our current project is a cooperative Metroidvania game with innovative mechanics.</p>
         </section>
 
-        <section id="projects">
-            <h2>Our Projects</h2>
-            <h3>The Game That Started it All</h3>
-            <a href="https://Cluck.cddstudios.com/Cluck and Bawk/Cluck.html" target="_blank">Cluck and Bawk</a>
-            <p>We are currently working on exciting new titles that blend immersive worlds with compelling narratives. Stay tuned for updates on our latest creations!</p>
+        <section class="Origins">
+            <h2>Origins</h2>
+            <a class="cta" href="/cluck.html">Play</a>
+            <p>Check out the game that started the creation of <br>CDDS</p>
         </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Have questions or want to collaborate? Reach out to us at <a href="mailto:info@cddstudios.com">info@cddstudios.com</a>.</p>
+        <section class="journey">
+            <h2>Follow Our Journey</h2>
+            <a class="cta" href="/sign-up.html">Sign up for Updates</a>
+            <p id="socials-callout">Check out our progress and updates on social media!</p>
+            <div class="social-links">
+                <a href="#" target="_blank">Twitter</a>
+                <a href="#" target="_blank">YouTube</a>
+                <a href="#" target="_blank">Twitch</a>
+            </div>
         </section>
-    </div>
+    </main>
 
     <footer>
-        <p>&copy; 2024 CDD Studios. All rights reserved.</p>
+        <p>&copy; 2025 CDD Studios. All rights reserved.</p>
     </footer>
 </body>
+
+
 </html>
